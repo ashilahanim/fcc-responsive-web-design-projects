@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bird Enthusiast Survey Form</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <h1>How Enthusiastic Are You About Bird?</h1>
+        <p>Dear bird enthusiast (or not), do fill in this form to unleash your inner bird spirit!</p>
+        <form method="post">
+            
+            <!--Email Input-->
+            <label for="name">Your Name: </label><input id="name" type="text" name="name" required>
+            <label for="email">Email: </label><input id="name" type="email" name="email" required>
+            <!--Bird Enthusiasm Level (Radio Buttons)-->
+            <label><input type="radio" name="enthusiasm" value="a-lot" required>A lot!</label>
+            <label><input type="radio" name="enthusiasm" value="a-little" required>A little!</label>
+            <label><input type="radio" name="enthusiasm" value="not-much" required>Not much!</label>
+            
+            <!--Favourite Bird (Dropdown)-->
+            <label for="favourite-bird">What is Your Favourite Bird?</label>
+            <select id="favourite-bird" name="favourite-bird">
+                <option value="eagle">Eagle</option>
+                <option value="parrot">Parrot</option>
+                <option value="pigeon">Pigeon</option>
+                <option valur="owl">Owl</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit">Submit</button>/>
+        </form>
+        </body>
+      </html>
+    </body>
+</html>
