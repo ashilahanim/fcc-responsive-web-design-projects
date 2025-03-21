@@ -11,14 +11,20 @@
         <form method="post">
             
             <!--Email Input-->
+            <div>
             <label for="name">Your Name: </label><input id="name" type="text" name="name" required>
             <label for="email">Email: </label><input id="name" type="email" name="email" required>
+            </div>
+
             <!--Bird Enthusiasm Level (Radio Buttons)-->
+            <div>
             <label><input type="radio" name="enthusiasm" value="a-lot" required>A lot!</label>
             <label><input type="radio" name="enthusiasm" value="a-little" required>A little!</label>
             <label><input type="radio" name="enthusiasm" value="not-much" required>Not much!</label>
-            
+            </div>
+
             <!--Favourite Bird (Dropdown)-->
+            <div>
             <label for="favourite-bird">What is Your Favourite Bird?</label>
             <select id="favourite-bird" name="favourite-bird">
                 <option value="eagle">Eagle</option>
@@ -27,6 +33,8 @@
                 <option valur="owl">Owl</option>
                 <option value="other">Other</option>
             </select>
+            </div>
+            
             <button type="submit">Submit</button>/>
         </form>
         </body>
