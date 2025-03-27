@@ -6,38 +6,65 @@
         <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
-        <h1>How Enthusiastic Are You About Bird?</h1>
-        <p>Dear bird enthusiast (or not), do fill in this form to unleash your inner bird spirit!</p>
-        <form method="post">
+        <h1 id="title">How Enthusiastic Are You About Birds?</h1>
+        <p id="description">Dear bird enthusiast (or not), do fill in this form to unleash your inner bird spirit!</p>
+        <form id="survey-form" method="post">
             
-            <!--Email Input-->
+            <!-- Email & Age Input -->
             <div>
-            <label for="name">Your Name: </label><input id="name" type="text" name="name" required>
-            <label for="email">Email: </label><input id="name" type="email" name="email" required>
+                <label for="name" id="name-label">Your Name:</label>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+
+                <label for="email" id="email-label">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+
+                <label for="age" id="age-label">Age:</label>
+                <input id="age" type="number" min="13" max="120">
             </div>
 
-            <!--Bird Enthusiasm Level (Radio Buttons)-->
+            <!-- Bird Enthusiasm Level (Radio Buttons) -->
             <div>
-            <label><input type="radio" name="enthusiasm" value="a-lot" required>A lot!</label>
-            <label><input type="radio" name="enthusiasm" value="a-little" required>A little!</label>
-            <label><input type="radio" name="enthusiasm" value="not-much" required>Not much!</label>
+                <label>How much do you like birds?</label>
+                <label><input type="radio" name="enthusiasm" value="a-lot" required> A lot!</label>
+                <label><input type="radio" name="enthusiasm" value="a-little" required> A little!</label>
+                <label><input type="radio" name="enthusiasm" value="not-much" required> Not much!</label>
             </div>
 
-            <!--Favourite Bird (Dropdown)-->
+            <!-- Favourite Bird (Dropdown) -->
             <div>
-            <label for="favourite-bird">What is Your Favourite Bird?</label>
-            <select id="favourite-bird" name="favourite-bird">
-                <option value="eagle">Eagle</option>
-                <option value="parrot">Parrot</option>
-                <option value="pigeon">Pigeon</option>
-                <option valur="owl">Owl</option>
-                <option value="other">Other</option>
-            </select>
+                <label for="dropdown">What is your favourite bird?</label>
+                <select id="dropdown" name="favourite-bird">
+                    <option value="eagle">Eagle</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="pigeon">Pigeon</option>
+                    <option value="owl">Owl</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
-            
-            <button type="submit">Submit</button>/>
+
+            <!-- Number of Birds Spotted -->
+            <div>
+                <label for="number" id="number-label">How many birds have you spotted today?</label>
+                <input id="number" name="number" type="number" min="0" max="100" placeholder="0" required>
+            </div>
+
+            <!-- Checkbox Section -->
+            <div>
+                <label>What bird activities do you enjoy?</label>
+                <label><input type="checkbox" name="activities" value="bird-watching"> Bird Watching</label>
+                <label><input type="checkbox" name="activities" value="photography"> Bird Photography</label>
+                <label><input type="checkbox" name="activities" value="feeding"> Feeding Birds</label>
+            </div>
+
+            <!-- Textarea for Additional Comments -->
+            <div>
+                <label for="comments">Any additional comments?</label>
+                <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Share your thoughts..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button id="submit" type="submit">Submit</button>
+
         </form>
-        </body>
-      </html>
     </body>
 </html>
